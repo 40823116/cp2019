@@ -1,0 +1,1 @@
+var tipuesearch = {"pages": [{'title': 'About', 'text': '\n \n 我是❤探險ㄉ朵辣 \n 40823116\xa0', 'tags': '', 'url': 'About.html'}]};
