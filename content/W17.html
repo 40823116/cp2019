@@ -149,13 +149,40 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">LOOP << <a href='LOOP.html'>Previous</a> <a href='program.html'>Next</a> >> program<br /><h1>Rungekutta</h1>
-<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=f7e285308ba4ed92ae4087eb73fec3e5" width="550"></iframe></p>
-<p><img alt="" height="330" src="./../images/bang2.png" width="550"/></p>
-<p></p>
-<p><img alt="" height="337" src="./../images/bang.png" width="550"/></p>
-<p>簡諧運動</p>
-<br />LOOP << <a href='LOOP.html'>Previous</a> <a href='program.html'>Next</a> >> program</div>
+    <div id="tipue_search_content">program << <a href='program.html'>Previous</a> <a href='image.html'>Next</a> >> image<br /><h1>W17</h1>
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823116&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823116&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823116&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('weight')">重量轉換</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('weight1')">重量轉換</button> <button onclick="getHtmlDart('flag')">各國旗幟</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823116&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p><br />program << <a href='program.html'>Previous</a> <a href='image.html'>Next</a> >> image</div>
         
     <!-- footer -->
       <div class="container">
